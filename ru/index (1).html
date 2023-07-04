@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Мы - компания полного цикла туристических услуг, предоставляющая
+    индивидуальные решения для путешествий и начиная с помощи на аэропорте, гостинице и поездке к
+    достопримечательностям. Мы имеем команду туристических
+    профессионалов, чтобы прогуляться по Узбекистану, заботясь о
+    конкретных потребностях."
+    />
+    <meta
+      name="keywords"
+      content="WorldWide Travel, туристическое агентство, travel agency, Путешествие по Узбекистану, wwt, Explore Uzbekistan, Центральная Азия, Туристические пакеты, Культурный опыт, Приключенческий туризм, Шелковый путь, Исторические места, Местная кухня, Фотосъемка пейзажей, Визовые услуги, Управление направлениями, Групповые туры, Частные туры, Ответственный туризм, Экотуризм, Горные походы, Культурные фестивали, Древние руины, Кочевой образ жизни, Блог о путешествиях"
+    />
+    <meta name="author" content="Ravshan Ibragimov" />
+    <meta
+      property="og:title"
+      content="WorldWide Travel - туристическое агентство"
+    />
+    <meta
+      property="og:description"
+      content="Мы - компания полного цикла туристических услуг, предоставляющая
+    индивидуальные решения для путешествий и начиная с помощи на аэропорте, гостинице и поездке к
+    достопримечательностям. Мы имеем команду туристических
+    профессионалов, чтобы прогуляться по Узбекистану, заботясь о
+    конкретных потребностях."
+    />
+    <meta property="og:image" content="/assets/imgs/background2.jpg" />
+    <link rel="stylesheet" href="/assets/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/assets/css/all.min.css" />
+    <link rel="stylesheet" href="/assets/css/zt-indent.css" />
+    <link rel="stylesheet" href="/assets/css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="/bundle.min.css" />
+    <link rel="icon" href="/assets/imgs/logo.ico" type="image/x-icon">
+    <title>WorldWide Travel - туристическое агентство</title>
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=b6611803-8548-4b23-91e4-18753a3ab8f6&lang=ru_RU"
+      type="text/javascript"
+    ></script>
+    <script src="/assets/js/mobile-detect.js"></script>
+    <script src="/assets/js/axios.min.js"></script>
+
+    <!-- change all links for cdn-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <!-- <script>
+      document.addEventListener( 'DOMContentLoaded', function() {
+        var splide = new Splide( '.splide' );
+        splide.mount();
+      } );
+    </script> -->
+  </head>
+  <body>
+    <nav id="nav" class="navbar">
+      <button class="navbar-toggler">
+        <div class="sticks">
+          <div class="sticks-el"></div>
+          <div class="sticks-el"></div>
+        </div>
+      </button>
+      <a href="/" class="navbar-brand">
+        <img src="/assets/imgs/logo.png" alt="World Wide Travel Logo" />
+        <div class="inline" id="brand-name"><strong>WorldWide <span>Travel</span></strong></div>
+      </a>
+      <div class="navbar-nav">
+        <div class="fadeUp">
+          <div class="navbar-info">
+            <div class="navbar-info-row menu">
+              <a href="#about" class="navbar-link navlinks">О нас</a>
+              <a class="navbar-link navlinks">Путешествия</a>
+              <a href="#blog" class="navbar-link navlinks">Наш блог</a>
+              <a href="#feedback" class="navbar-link navlinks">СВЯЗАТЬСЯ с нами</a>
+            </div>
+            <div class="navbar-info-row">
+              <div class="navbar-info-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="navbar-info-col">
+                <a href="tel:+998781200629">+998 (78) 120-06-29</a> 
+                <a href="tel:+998909498080">+998 (90) 949-80-80</a>
+              </div>
+            </div>
+            <div class="navbar-info-row">
+              
+              <a href="mailto:worldwidetravel.uz@gmail.com">
+                <div class="navbar-info-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="navbar-dropdown">
+            <a href="/" class="navbar-link">EN</a>
+            <div class="navbar-dropdown-menu">
+              <a href="/uz" class="navbar-link">UZ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header class="header">
+      <div class="header-overlay">
+        <div class="splide background" aria-labelledby="carousel-heading" id="splideback">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide"><img  src="/assets/imgs/background12.png" alt=""></li>
+              <li class="splide__slide"><img  src="/assets/imgs/background13.png" alt=""></li>
+              <li class="splide__slide"><img src="/assets/imgs/background14.png" alt=""></li>
+              <li class="splide__slide"><img  src="/assets/imgs/bg1.jpg" alt=""></li>
+              <li class="splide__slide"><img  src="/assets/imgs/bg2.jpg" alt=""></li>
+              <li class="splide__slide"><img  src="/assets/imgs/bg3.jpg" alt=""></li>
+              <li class="splide__slide"><img  src="/assets/imgs/bg4.jpg" alt=""></li>
+              <li class="splide__slide"><img  src="/assets/imgs/bg5.jpg" alt=""></li>
+              <li class="splide__slide"><img  src="/assets/imgs/bg6.jpg" alt=""></li>
+              <li class="splide__slide"><img  src="/assets/imgs/bg7.jpg" alt=""></li>
+              <li class="splide__slide"><img  src="/assets/imgs/bg8.jpg" alt=""></li>
+              <li class="splide__slide"><img  src="/assets/imgs/bg9.jpg" alt=""></li>
+              <li class="splide__slide"><img  src="/assets/imgs/bg10.jpg" alt=""></li>
+              <li class="splide__slide"><img  src="/assets/imgs/bg11.jpg" alt=""></li>
+              <li class="splide__slide"><img  src="/assets/imgs/bg12.jpg" alt=""></li>
+              <li class="splide__slide"><img  src="/assets/imgs/bg13.jpg" alt=""></li>
+            </ul>
+          </div>
+        </div>
+        <!-- <img
+          src="../assets/imgs/background1.jpg"
+          class="background"
+          alt="travelling"
+        /> -->
+        <div class="header-intro">
+          <div class="header-intro-caption">Adventure</div>
+          <h1 class="header-intro-title">
+            Исследуйте <span>Центральную Азию</span>
+            <!-- Ваш лучший помощник в <span>Центральной Азии</span> -->
+          </h1>
+        </div>
+        <a href="#about" class="scroll-down"
+          ><i class="fas fa-chevron-down"></i
+        ></a>
+      </div>
+    </header>
+    <section class="section about" id="about">
+      <div class="section-overlay">
+        <div class="section-row aifs">
+          
+
+          <div class="col-md-7 pl">
+            <h3 class="section-title">О нас</h3>
+            <div class="section-content">
+              <p>
+                Наша компания успешно работает в сфере туризма на рынке
+                Узбекистана с 2005 года. Мы специализируемся на приеме и
+                отправке туристов и обеспечение их, турне и экскурсия Сервисы.
+                Мы - компания полного цикла туристических услуг, предоставляющая
+                индивидуальные решения для путешествий и начиная с помощи на
+                аэропорте, гостинице и поездке к достопримечательностям. Мы
+                имеем команду туристических профессионалов, чтобы прогуляться по
+                Узбекистану, заботясь о конкретных потребностях.
+              </p>
+              <img
+              src="/assets/imgs/background.jpg"
+              style="
+                width: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+                overflow: hidden;
+              "
+              height="315"
+              alt="About us"
+            />
+            </div>
+          </div>
+
+          <div class="col-md-5 section-content">
+            <!-- <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/4MFcmreAUhs"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe> -->
+            <img
+              src="/assets/imgs/background12.png"
+              style="
+                width: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+                overflow: hidden;
+                margin-top: 16px;
+              "
+              height="315"
+              alt="About us"
+            />
+            <div class="section-content">
+              <p style="margin-top: 16px;">
+                Узбекистан - это отдельная страна, уникальное место назначения.
+                Таинственный, красочный, экзотический, всегда запоминающийся,
+                для посещения страна - сила - пакет постоянно вращающегося
+                калейдоскопа обычаи, фестивали, цвета, виды и звуки. Праздник в
+                Узбекистане - это всегда богатый событиями опыт, и однажды
+                требует точного планирования, планирования и координации, а
+                также управление логистикой.
+              </p>
+              <p>
+                От индивидуального отдыха до MICE-туров, от семейного отдыха до
+                исследование новых горизонтов, пусть
+                <strong style="color:var(--color)">WORLDWIDE <span style="color: var(--secondColor)">TRAVEL</span></strong> сопровождает всех вместе.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="section testimonials" id="testimonial">
+      <div class="section-overlay">
+        <div class="section-row aifs">
+          <div class="col pl">
+            <h3 class="section-title">Отзывы наших клиентов</h3>
+            <div class="section-content">
+                <div class="splide" aria-labelledby="carousel-heading" id="splidetesti">
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide">
+                        <div class="testimonial">
+                          <h2 class="testi-name">Nikita</h2>
+                          <div class="testi-devider"></div>
+                          <p class="testi-text">We just finished our trip through Uzbekistan. It was a great experience, you can be proud of your country. Your services were 10 out of 10. Also our guide in Khiva, Sahida, was 10 out of 10. Many thanks again!</p>
+                      </div>
+                      </li>
+                      <li class="splide__slide">Slide 02</li>
+                      <li class="splide__slide">Slide 03</li>
+                      <li class="splide__slide">Slide 04</li>
+                    </ul>
+                  </div>
+                </div>
+                !-- <div class="blog-ticket">
+                  <div class="blog-background-photo"></div>
+                  <div class="blog-title"></div>
+                  <div class="blog-description"></div>
+                  <div class="blog-link">
+                    <p>READ IT</p>
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                  </div>
+                </div> --
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section blog" id="blog">
+      <div class="section-overlay">
+        <div class="section-row aifs">
+          <div class="col pl">
+            <h3 class="section-title">Наш блог</h3>
+            <div class="section-content">
+              <div class="inner-blog">
+                <div class="splide" aria-labelledby="carousel-heading" id="splideblog">
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide">
+                        <div class="blog-ticket">
+                          <img class="blog-bg" src="/assets/imgs/background13.png" alt="">
+                          <h3 class="blog-title">How to get visa for Uzbekistan?</h3>
+                          <div class="blog-description">
+                              Lorem ipsum dolor sit amet consectetur, labore nemo!
+                          </div>
+                          <a class="blog-btn">
+                              <p>Read it!</p>
+                              <i class="fa fa-arrow-right fa-fw" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="splide__slide">Slide 02</li>
+                      <li class="splide__slide">Slide 03</li>
+                      <li class="splide__slide">Slide 04</li>
+                    </ul>
+                  </div>
+                </div>
+                !-- <div class="blog-ticket">
+                  <div class="blog-background-photo"></div>
+                  <div class="blog-title"></div>
+                  <div class="blog-description"></div>
+                  <div class="blog-link">
+                    <p>READ IT</p>
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                  </div>
+                </div> --
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    
+    <section class="section feedback" id="feedback">
+      <div class="section-overlay">
+        <div class="section-row aifs">
+          <div class="col-md-7 pl">
+            <h3 class="section-title">СВЯЗАТЬСЯ С НАМИ</h3>
+            <div class="section-content">
+              <form action="#" class="form form-vertical">
+                <div class="form-group">
+                  <label for="name" class="form-control-label">Имя</label>
+                  <input
+                    type="text"
+                    name="name"
+                    autocomplete="off"
+                    id="name"
+                    class="form-control"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-control-label">E-mail</label>
+                  <input
+                    type="text"
+                    name="email"
+                    autocomplete="off"
+                    id="email"
+                    class="form-control"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="msg" class="form-control-label">Сообщение</label>
+                  <textarea
+                    name="msg"
+                    id="msg"
+                    rows="10"
+                    autocomplete="off"
+                    class="form-control"
+                  ></textarea>
+                </div>
+                <button type="submit" class="form-button">Отправить</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-5 map-container">
+            <div
+              id="map"
+              style="
+                width: 100%;
+                border-radius: 10px;
+                overflow: hidden;
+                height: 400px;
+              "
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer id="footer" class="footer" role="contentinfo">
+      <div class="col-md-2 col-sm-4 mb-3">
+        <img
+          src="/assets/imgs/logo.png"
+          class="w-logo"
+          alt="WorldWide Travel"
+        />
+      </div>
+      <div class="col-md-3 col-sm-8">
+        <div class="footer-title">Адрес</div>
+        <div class="footer-content">
+          <p>Мирзо-Улугбекский район, улица Узбекистон овози, 2</p>
+          <p>Ташкент, Узбекистан</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="footer-title">Контакты</div>
+        <div class="footer-content">
+          <p><a href="tel:+998781200629">+998 (78) 120-06-29</a></p>
+          <p><a href="tel:+998909498080">+998 (90) 949-80-80</a></p>
+          <p>
+            <a href="mailto:worldwidetravel.uz@gmail.com"
+              >worldwidetravel.uz@gmail.com</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="footer-title">О нас</div>
+        <div class="footer-content">
+          <p>WorldWide Travel - туристическое агентство</p>
+          <p>© 2023. Все права защищены</p>
+        </div>
+      </div>
+    </footer>
+    <script src="/index.min.js"></script>
+
+    <!-- splide js -->
+    <script>
+       document.addEventListener( 'DOMContentLoaded', function() {
+            new Splide('#splideback', {
+              type  : 'fade',
+              rewind: true,
+                autoplay: true,
+                arrows: false,
+                pagination: false,
+            }).mount();
+        } );
+
+        document.addEventListener( 'DOMContentLoaded', function() {
+            new Splide('#splidetesti', {
+              type    : 'loop',
+              perPage : 1,
+              autoplay: true,
+              pagination: false,
+            }).mount();
+        } );
+
+        document.addEventListener( 'DOMContentLoaded', function() {
+            new Splide('#splideblog', {
+              type    : 'loop',
+              perPage : 3,
+              autoplay: true,
+              arrows: false,
+              drag   : 'free',
+              snap   : true,
+              perMove: 1,
+              pauseOnHover: true,
+              pagination: false,
+              breakpoints: {
+                1300: { perPage: 2 },
+                950 : { perPage: 1 },
+              },
+            }).mount();
+        } );
+    </script>
+
+
+    <script type="text/javascript">
+      ymaps.ready(init);
+      function init() {
+        const myMap = new ymaps.Map("map", {
+          center: [41.310316, 69.285045],
+          zoom: 16,
+        });
+
+        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+          hintContent: "WorldWide Travel",
+          balloonContent: "WorldWide Travel",
+        });
+        myMap.geoObjects.add(myPlacemark);
+        myMap.behaviors.disable(["scrollZoom"]);
+      }
+    </script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
+
+      ym(92550825, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+      });
+    </script>
+    <noscript>
+      <div>
+        <img
+          src="https://mc.yandex.ru/watch/92550825"
+          style="position: absolute; left: -9999px"
+          alt=""
+        />
+      </div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+  </body>
+</html>
