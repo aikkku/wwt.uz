@@ -1053,7 +1053,6 @@ a:hover{
 
     background-color: var(--color); /*change it to the primary color of the website*/
     height: 10%;
-    cursor: pointer;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
@@ -1095,6 +1094,25 @@ a:hover{
 
 .header-overlay .splide__track{
     height: 100%;
+}
+
+.row{
+    margin-bottom: 50px;
+}
+
+.devider{
+    width: 50%;
+    height: 2px;
+    background-color: #000000;
+}
+
+.links{
+    margin-top: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
+    display: flex;
+    justify-content: space-around;
+
 }
 
 @media (max-width: 992px){
