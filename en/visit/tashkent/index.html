@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="We specialize in receiving and sending tourists and provide for them, tour and excursion services. We are a complete travel service company providing customized travel solutions and starting from assistance at the Tashkent international airport to car, hotel and sightseeing."
+    />
+    <meta
+      name="keywords"
+      content="WorldWide Travel, travel agency, wwt, Explore Uzbekistan, Central Asia, Tourist agency, Travel packages, Cultural experiences, Adventure tourism, Silk Road, Historical sites, Local cuisine, Landscape photography, Visa services, Destination management, Group tours, Private tours, Responsible tourism, Ecotourism, Mountain trekking, Cultural festivals, ancient ruins, Nomadic lifestyle, Travel blog"
+    />
+    <meta name="author" content="Asilbek Ismatilloev" />
+    <meta
+      property="og:title"
+      content="WorldWide Travel - travel agency"
+    />
+    <meta
+      property="og:description"
+      content="We specialize in receiving and sending tourists and provide for them, tour and excursion services. We are a complete travel service company providing customized travel solutions and starting from assistance at the Tashkent international airport to car, hotel and sightseeing."
+    />
+    <meta property="og:image" content="/assets/imgs/background2.jpg" />
+    <link rel="stylesheet" href="/assets/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/assets/css/all.min.css" />
+    <link rel="stylesheet" href="/assets/css/zt-indent.css" />
+    <link rel="stylesheet" href="/assets/css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="/bundle.min.css" />
+    <link rel="icon" href="/assets/imgs/logo.ico" type="image/x-icon">
+    <title>WorldWide Travel - travel agency</title>
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=b6611803-8548-4b23-91e4-18753a3ab8f6&lang=ru_RU"
+      type="text/javascript"
+    ></script>
+    <script src="/assets/js/mobile-detect.js"></script>
+    <script src="/assets/js/axios.min.js"></script>
+
+    <!-- change all links for cdn-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <!-- <script>
+      document.addEventListener( 'DOMContentLoaded', function() {
+        var splide = new Splide( '.splide' );
+        splide.mount();
+      } );
+    </script> -->
+  </head>
+  <body>
+    <nav id="nav" class="navbar">
+      <button class="navbar-toggler">
+        <div class="sticks">
+          <div class="sticks-el"></div>
+          <div class="sticks-el"></div>
+        </div>
+      </button>
+      <a href="/" class="navbar-brand">
+        <img src="/assets/imgs/logo.png" alt="World Wide Travel Logo" />
+        <div class="inline" id="brand-name"><strong>WorldWide <span>Travel</span></strong></div>
+      </a>
+      <div class="navbar-nav">
+        <div class="fadeUp">
+          <div class="navbar-info">
+            <div class="navbar-info-row menu">
+              <a href="/" class="navbar-link navlinks">About us</a>
+              <div class="navbar-dropdown droptr">
+                <a class="navbar-link droptrl">Travel</a>
+                <div class="navbar-dropdown-menu ">
+                  <a href="/en/visit/khiva/" class="navbar-link">Khiva</a>
+                  <a href="/en/visit/samarkand/" class="navbar-link">Samarkand</a>
+                  <a href="/en/visit/tashkent/" class="navbar-link">Tashkent</a>
+                </div>
+              </div>
+              <a href="#blog" class="navbar-link navlinks">Our blog</a>
+              <a href="#feedback" class="navbar-link navlinks">Contact us</a>
+            </div>
+            <div class="navbar-info-row">
+              <div class="navbar-info-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="navbar-info-col">
+                <a href="tel:+998781200629">+998 (78) 120-06-29</a> 
+                <a href="tel:+998909498080">+998 (90) 949-80-80</a>
+              </div>
+            </div>
+            <div class="navbar-info-row">
+              
+              <a href="mailto:worldwidetravel.uz@gmail.com">
+                <div class="navbar-info-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="navbar-dropdown">
+            <a href="/uz/visit/tashkent/" class="navbar-link">UZ</a>
+            <div class="navbar-dropdown-menu">
+              <a href="/ru/visit/tashkent/" class="navbar-link">RU</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header class="header">
+      <div class="header-overlay">
+        <img class="background" src="/assets/imgs/tash2.jpg" alt=""></li>
+        <!-- <img
+          src="../assets/imgs/background1.jpg"
+          class="background"
+          alt="travelling"
+        /> -->
+        <div class="header-intro">
+          <div class="header-intro-caption">Adventure</div>
+          <h1 class="header-intro-title">Explore <span>Tashkent</span></h1>
+        </div>
+        <a href="#about" class="scroll-down"
+          ><i class="fas fa-chevron-down"></i
+        ></a>
+      </div>
+    </header>
+    <section class="section about" id="about">
+      <div class="section-overlay">
+        <div class="section-row aifs">
+          
+
+          <div class="col-md-7 pl">
+            <h3 class="section-title">About Tashkent</h3>
+            <div class="section-content">
+              <p>
+                Travelling to Tashkent, the vibrant capital of Uzbekistan, is a journey that promises to immerse you in the country's cultural heart and leave you captivated by its charm. This Central Asian gem is a treasure trove of historical wonders, warm hospitality, and a rich tapestry of traditions.
+              </p>
+              <img
+              src="/assets/imgs/background.jpg"
+              style="
+                width: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+                overflow: hidden;
+              "
+              height="315"
+              alt="The Amir Timur Museum is located in Tashkent, the capital of Uzbekistan. It opened in 1996, and is dedicated to the Turco-Mongol warlord Amir Timur (Tamerlane)."
+            />
+            </div>
+          </div>
+
+          <div class="col-md-5 section-content">
+            <!-- <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/4MFcmreAUhs"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe> -->
+            <img
+              src="/assets/imgs/tash3.jpg"
+              style="
+                width: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+                overflow: hidden;
+                margin-top: 16px;
+              "
+              height="315"
+              alt="About us"
+            />
+            <div class="section-content">
+              <p style="margin-top: 16px;">
+                Tashkent combines modernity with ancient allure. The city's skyline features contemporary architecture and iconic landmarks. Explore the vibrant Chorsu Bazaar and restored madrasahs like Kukeldash and Barak-Khan for a glimpse into Uzbekistan's rich heritage.
+              </p>
+              <p>
+                From custom-made holidays to MICE tours, from family holidays to exploration of new horizons, let <strong style="color:var(--color)">WORLDWIDE <span style="color: var(--secondColor)">TRAVEL</span></strong> accompany all along.
+              </p>
+              <!-- <strong style="color:var(--color)">WORLDWIDE <span style="color: var(--secondColor)">TRAVEL</span></strong> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section video">
+        <div class="section-overlay">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/2V-2ABkUREE?start=12" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="splide" id="splidetour"
+    style="
+      margin: 60px;
+    ">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <div class="tour-ticket">
+              <img class="tour-bg" src="/assets/imgs/tash1.jpg">
+              <div class="tour-content">
+                  <h2 class="tour-title">Tashkent City Tour</h3>
+                  <ul class="tour-description fa-ul">
+                      <li class="ldesc"><span class="fa-li"><i class="fas fa-info"></i></span>Check out the most famous landmarks in Tashkent on this group city tour.</li>
+                      <li><span class="fa-li"><i class="fas fa-calendar"></i></span>6-7 hours</li>
+                      <li><span class="fa-li"><i class="fas fa-dollar-sign"></i></span>$79.00</li>
+                  </ul>
+                  <a class="tour-btn" href="#feedback" id="btn">Contact us!</a>
+              </div>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="tour-ticket">
+              <img class="tour-bg" src="/assets/imgs/tash2.jpg">
+              <div class="tour-content">
+                  <h2 class="tour-title">Tashkent City Tour</h3>
+                  <ul class="tour-description fa-ul">
+                      <li class="ldesc"><span class="fa-li"><i class="fas fa-info"></i></span>Check out the most famous landmarks in Tashkent on this group city tour.</li>
+                      <li><span class="fa-li"><i class="fas fa-calendar"></i></span>6-7 hours</li>
+                      <li><span class="fa-li"><i class="fas fa-dollar-sign"></i></span>$79.00</li>
+                  </ul>
+                  <a class="tour-btn" href="#feedback" id="btn">Contact us!</a>
+              </div>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="tour-ticket">
+              <img class="tour-bg" src="/assets/imgs/tash3.jpg">
+              <div class="tour-content">
+                  <h2 class="tour-title">Tashkent City Tour</h3>
+                  <ul class="tour-description fa-ul">
+                      <li class="ldesc"><span class="fa-li"><i class="fas fa-info"></i></span>Check out the most famous landmarks in Tashkent on this group city tour.</li>
+                      <li><span class="fa-li"><i class="fas fa-calendar"></i></span>6-7 hours</li>
+                      <li><span class="fa-li"><i class="fas fa-dollar-sign"></i></span>$79.00</li>
+                  </ul>
+                  <a class="tour-btn" href="#feedback" id="btn">Contact us!</a>
+              </div>
+            </div>
+          </li>
+          <style>
+            .tour-ticket{
+              margin-right: auto;
+              margin-left: auto;
+              width: 90%;
+              height: 200px;
+            }
+
+            .tour-title{
+              margin-left: 5%;
+            }
+
+            .tour-btn{
+              background-color: var(--color);
+              color: white;
+            }
+
+            .tour-btn:hover{
+              color: white;
+            }
+          </style>
+        </ul>
+      </div>
+    </section>
+    
+
+    <section class="section blog" id="blog">
+      <div class="section-overlay">
+        <div class="section-row aifs">
+          <div class="col pl">
+            <h3 class="section-title">Our blog</h3>
+            <div class="section-content">
+              <div class="inner-blog">
+                <div class="splide" aria-labelledby="carousel-heading" id="splideblog">
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide">
+                        <div class="blog-ticket">
+                          <img class="blog-bg" src="/assets/imgs/background12.png" alt="">
+                          <h3 class="blog-title">How to get a visa for Uzbekistan?</h3>
+                          <div class="blog-description">
+                            Essential Uzbekistan Visa Guide: Unlock the Magic of a Captivating Journey!
+                          </div>
+                          <a class="blog-btn" href="/en/blog/how-to-get-a-visa-for-uzbekistan/">
+                              <p>Read it!</p>
+                              <i class="fa fa-arrow-right fa-fw" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="blog-ticket">
+                            <img class="blog-bg" src="/assets/imgs/background13.png" alt="">
+                            <h3 class="blog-title">Why you should approach a tour agency?</h3>
+                            <div class="blog-description">
+                                Unleash the Benefits: Choose WorldWide Travel for a Seamless, Personalized, and Memorable Journey!
+                            </div>
+                            <a class="blog-btn" href="/en/blog/why-you-should-approach-a-tour-agency/">
+                                <p>Read it!</p>
+                                <i class="fa fa-arrow-right fa-fw" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="blog-ticket">
+                            <img class="blog-bg" src="/assets/imgs/progress.jpg" alt="">
+                            <h3 class="blog-title">Blog is in progress</h3>
+                            <div class="blog-description">
+                                It will be done in a few days, but you can enjoy reading our other blogs.
+                            </div>
+                            <div class="blog-btn" style="background-color: gray;">
+                                <p>In progress</p>
+                                <i class="fa fa-gears fa-fw" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="blog-ticket">
+                            <img class="blog-bg" src="/assets/imgs/bg3.jpg" alt="">
+                            <h3 class="blog-title">Blog is in progress</h3>
+                            <div class="blog-description">
+                                It will be done in a few days, but you can enjoy reading our other blogs.
+                            </div>
+                            <div class="blog-btn" style="background-color: gray;">
+                                <p>In progress</p>
+                                <i class="fa fa-gears fa-fw" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section feedback" id="feedback">
+      <div class="section-overlay">
+        <div class="section-row aifs">
+          <div class="col-md-7 pl">
+            <h3 class="section-title">Contact us</h3>
+            <div class="section-content">
+              <form action="https://formsubmit.co/musorka.asila@gmail.com" method="POST" class="form form-vertical">
+                <div class="form-group">
+                  <label for="name" class="form-control-label">Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    autocomplete="off"
+                    id="name"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-control-label">E-mail</label>
+                  <input
+                    type="email"
+                    name="email"
+                    autocomplete="off"
+                    id="email"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="msg" class="form-control-label">Message</label>
+                  <textarea
+                    name="msg"
+                    id="msg"
+                    rows="10"
+                    autocomplete="off"
+                    class="form-control"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="form-button">Send</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-5 map-container">
+            <div
+              id="map"
+              style="
+                width: 100%;
+                border-radius: 10px;
+                overflow: hidden;
+                height: 400px;
+              "
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer id="footer" class="footer" role="contentinfo">
+      <div class="col-md-2 col-sm-4 mb-3">
+        <img
+          src="/assets/imgs/logo.png"
+          class="w-logo"
+          alt="WorldWide Travel"
+        />
+      </div>
+      <div class="col-md-3 col-sm-8">
+        <div class="footer-title">Address</div>
+        <div class="footer-content">
+          <p>2, Uzbekiston Ovozi street, Mirzo-Ulugbek district</p>
+          <p>Tashkent, Uzbekistan</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="footer-title">Contacts</div>
+        <div class="footer-content">
+          <p><a href="tel:+998781200629">+998 (78) 120-06-29</a></p>
+          <p><a href="tel:+998909498080">+998 (90) 949-80-80</a></p>
+          <p>
+            <a href="mailto:worldwidetravel.uz@gmail.com"
+              >worldwidetravel.uz@gmail.com</a
+            >
+          </p>
+          <div class="links" style="
+            border-bottom: 0px;
+            padding-left: 0px;
+            padding-right: 50%;
+          ">
+            <a href="https://www.instagram.com/wwt_uz/">
+                <div class="navbar-info-icon">
+                    <i class="fa fa-hashtag" aria-hidden="true"></i>
+                </div>
+            </a>
+            <a href="https://t.me/wwt_uz">
+                <div class="navbar-info-icon">
+                    <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                </div>
+            </a>
+            <script src="https://yastatic.net/share2/share.js"></script>
+            <div class="ya-share2" data-curtain data-shape="round" data-color-scheme="blackwhite" data-limit="0" data-more-button-type="short" data-services="telegram,viber,whatsapp" data-popup-direction="top"></div>
+        </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="footer-title">About Us</div>
+        <div class="footer-content">
+          <p>WorldWide Travel - travel agency</p>
+          <p>©  2023. All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+    <script src="/index.min.js"></script>
+
+    <!-- splide js -->
+    <script>
+       document.addEventListener( 'DOMContentLoaded', function() {
+            new Splide('#splideback', {
+              type  : 'fade',
+              rewind: true,
+                autoplay: true,
+                arrows: false,
+                pagination: false,
+                lazyload: 'sequential',
+                interval: 10000,
+            }).mount();
+        } );
+
+        document.addEventListener( 'DOMContentLoaded', function() {
+            new Splide('#splidetesti', {
+              type    : 'loop',
+              perPage : 1,
+              autoplay: true,
+              pagination: false,
+            }).mount();
+        } );
+
+        document.addEventListener( 'DOMContentLoaded', function() {
+            new Splide('#splidetour', {
+              type    : 'loop',
+              perPage : 2,
+              pagination: false,
+              breakpoints: {
+                1215: { perPage: 1 },
+              },
+            }).mount();
+        } );
+
+        document.addEventListener( 'DOMContentLoaded', function() {
+            new Splide('#splideblog', {
+              type    : 'loop',
+              perPage : 3,
+              autoplay: true,
+              arrows: false,
+              drag   : 'free',
+              snap   : true,
+              perMove: 1,
+              pauseOnHover: true,
+              pagination: false,
+              breakpoints: {
+                1300: { perPage: 2 },
+                950 : { perPage: 1 },
+              },
+            }).mount();
+        } );
+
+        const textarea = document.getElementById('msg');
+
+        const btn = document.getElementById('btn');
+
+        btn.addEventListener('click', function handleClick() {
+          textarea.value += 'I am interested in Tashkent City Tour';
+        });
+
+    </script>
+
+
+    <script type="text/javascript">
+      ymaps.ready(init);
+      function init() {
+        const myMap = new ymaps.Map("map", {
+          center: [41.310316, 69.285045],
+          zoom: 16,
+        });
+
+        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+          hintContent: "WorldWide Travel",
+          balloonContent: "WorldWide Travel",
+        });
+        myMap.geoObjects.add(myPlacemark);
+        myMap.behaviors.disable(["scrollZoom"]);
+      }
+    </script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
+
+      ym(92550825, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+      });
+    </script>
+    <noscript>
+      <div>
+        <img
+          src="https://mc.yandex.ru/watch/92550825"
+          style="position: absolute; left: -9999px"
+          alt=""
+        />
+      </div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+  </body>
+</html>
