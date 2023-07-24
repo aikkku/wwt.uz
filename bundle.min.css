@@ -1145,8 +1145,7 @@ a:hover{
   .tour-ticket{
     width: 100%;
     display: flex;
-
-
+  
     background-color: #ececec;
     border-radius: 15px;
 }
@@ -1188,6 +1187,63 @@ a:hover{
 
 .video div{
     height: 100vh;
+}
+
+
+.bio{
+    font-family: var(--font);
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.bio h2{
+    padding-top: 20px;
+}
+
+.bio img{
+    height: 400px;
+    width: 300px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: var(--color);
+    object-fit: cover;
+}
+
+.bio p{
+    text-align: center;
+}
+
+.bio-links{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+@media(max-width: 982px){
+    .bio{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #splidetour{
+        height: 50vh;
+    }
+
+    .tour-ticket{
+        height: 1000px;
+    }
+}
+
+@media (max-width: 768px){
+    .bio{
+        margin-top: 50px;
+    }
 }
 
 @media (max-width: 868px){

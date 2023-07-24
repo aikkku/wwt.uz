@@ -75,11 +75,13 @@
               <div class="navbar-dropdown droptr">
                 <a class="navbar-link droptrl">Путешествие</a>
                 <div class="navbar-dropdown-menu ">
+                  <a href="/ru/visit/bukhara/" class="navbar-link">Бухара</a>
                   <a href="/ru/visit/khiva/" class="navbar-link">Хива</a>
                   <a href="/ru/visit/samarkand/" class="navbar-link">Самарканд</a>
                   <a href="/ru/visit/tashkent/" class="navbar-link">Ташкент</a>
                 </div>
               </div>
+              <a href="/ru/gallery/" class="navbar-link navlinks">Галерея</a>
               <a href="#blog" class="navbar-link navlinks">Наш блог</a>
               <a href="#feedback" class="navbar-link navlinks">СВЯЗАТЬСЯ с нами</a>
             </div>
@@ -206,41 +208,41 @@
             <div class="tour-ticket">
               <img class="tour-bg" src="/assets/imgs/tash1.jpg">
               <div class="tour-content">
-                  <h2 class="tour-title">Экскурсия по городу Ташкент</h3>
+                  <h2 class="tour-title">Экскурсия по Ташкенту</h3>
                   <ul class="tour-description fa-ul">
                       <li class="ldesc"><span class="fa-li"><i class="fas fa-info"></i></span>Ознакомьтесь с самыми известными достопримечательностями Ташкента во время этой групповой экскурсии по городу.</li>
-                      <li><span class="fa-li"><i class="fas fa-calendar"></i></span>6-7 часов</li>
-                      <li><span class="fa-li"><i class="fas fa-dollar-sign"></i></span>$79.00</li>
+                      <li><span class="fa-li"><i class="fas fa-calendar"></i></span>1 день</li>
+                      <li><span class="fa-li"><i class="fas fa-dollar-sign"></i></span>$140</li>
                   </ul>
-                  <a class="tour-btn" href="#feedback" id="btn">Свяжитесь с нами!</a>
+                  <a class="tour-btn" href="#feedback" id="btn1">Свяжитесь с нами!</a>
               </div>
             </div>
           </li>
           <li class="splide__slide">
             <div class="tour-ticket">
-              <img class="tour-bg" src="/assets/imgs/tash2.jpg">
+              <img class="tour-bg" src="/assets/imgs/bg5.jpg">
               <div class="tour-content">
-                  <h2 class="tour-title">Экскурсия по городу Ташкент</h3>
+                  <h2 class="tour-title">Тур по Узбекистану - бестселлер</h3>
                   <ul class="tour-description fa-ul">
-                      <li class="ldesc"><span class="fa-li"><i class="fas fa-info"></i></span>Ознакомьтесь с самыми известными достопримечательностями Ташкента во время этой групповой экскурсии по городу.</li>
-                      <li><span class="fa-li"><i class="fas fa-calendar"></i></span>6-7 часов</li>
-                      <li><span class="fa-li"><i class="fas fa-dollar-sign"></i></span>$79.00</li>
+                      <li class="ldesc"><span class="fa-li"><i class="fas fa-info"></i></span>Хорошо спланированный маршрут и один из самых популярных пакетов для незабываемого путешествия.</li>
+                      <li><span class="fa-li"><i class="fas fa-calendar"></i></span>7 дней</li>
+                      <li><span class="fa-li"><i class="fas fa-dollar-sign"></i></span>$995 для 2-3 человек</li>
                   </ul>
-                  <a class="tour-btn" href="#feedback" id="btn">Свяжитесь с нами!</a>
+                  <a class="tour-btn" href="#feedback" id="btn2">Свяжитесь с нами!</a>
               </div>
             </div>
           </li>
           <li class="splide__slide">
             <div class="tour-ticket">
-              <img class="tour-bg" src="/assets/imgs/tash3.jpg">
+              <img class="tour-bg" src="/assets/imgs/background11.jpg">
               <div class="tour-content">
-                  <h2 class="tour-title">Экскурсия по городу Ташкент</h3>
+                  <h2 class="tour-title">Бюджетный тур в Узбекистан</h3>
                   <ul class="tour-description fa-ul">
-                      <li class="ldesc"><span class="fa-li"><i class="fas fa-info"></i></span>Ознакомьтесь с самыми известными достопримечательностями Ташкента во время этой групповой экскурсии по городу.</li>
-                      <li><span class="fa-li"><i class="fas fa-calendar"></i></span>6-7 часов</li>
-                      <li><span class="fa-li"><i class="fas fa-dollar-sign"></i></span>$79.00</li>
+                      <li class="ldesc"><span class="fa-li"><i class="fas fa-info"></i></span>Туры в Узбекистан для знакомства с узбекской культурой, истоками и кухней и экономии вашего бюджета!</li>
+                      <li><span class="fa-li"><i class="fas fa-calendar"></i></span>6 дней</li>
+                      <li><span class="fa-li"><i class="fas fa-dollar-sign"></i></span>$425</li>
                   </ul>
-                  <a class="tour-btn" href="#feedback" id="btn">Свяжитесь с нами!</a>
+                  <a class="tour-btn" href="#feedback" id="btn3">Свяжитесь с нами!</a>
               </div>
             </div>
           </li>
@@ -369,6 +371,17 @@
                     />
                   </div>
                   <div class="form-group">
+                    <label for="phone" class="form-control-label">Номер телефона</label>
+                    <input
+                      type="tel"
+                      name="phone"
+                      autocomplete="off"
+                      id="phone"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
                     <label for="msg" class="form-control-label">Сообщение</label>
                     <textarea
                       name="msg"
@@ -488,10 +501,18 @@
   
           const textarea = document.getElementById('msg');
   
-          const btn = document.getElementById('btn');
+          const btn1 = document.getElementById('btn1');
+          const btn2 = document.getElementById('btn2');
+          const btn3 = document.getElementById('btn3');
   
-          btn.addEventListener('click', function handleClick() {
-            textarea.value += 'Я бы хотел(а) подробнее узнать про тур "Экскурсия по городу Ташкент"';
+          btn1.addEventListener('click', function handleClick() {
+            textarea.value += 'Я бы хотел(а) подробнее узнать про тур "Экскурсия по Ташкенту"';
+          });
+          btn2.addEventListener('click', function handleClick() {
+            textarea.value += 'Я бы хотел(а) подробнее узнать про тур "Тур по Узбекистану - бестселлер"';
+          });
+          btn3.addEventListener('click', function handleClick() {
+            textarea.value += 'Я бы хотел(а) подробнее узнать про тур "Бюджетный тур в Узбекистан"';
           });
   
       </script>

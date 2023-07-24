@@ -75,11 +75,13 @@
               <div class="navbar-dropdown droptr">
                 <a class="navbar-link droptrl">Sayohat</a>
                 <div class="navbar-dropdown-menu ">
+                  <a href="/uz/visit/bukhara/" class="navbar-link">Buxoro</a>
                   <a href="/uz/visit/khiva/" class="navbar-link">Xiva</a>
                   <a href="/uz/visit/samarkand/" class="navbar-link">Samarqand</a>
                   <a href="/uz/visit/tashkent/" class="navbar-link">Toshkent</a>
                 </div>
               </div>
+              <a href="/uz/gallery/" class="navbar-link navlinks">Galereya</a>
               <a href="#blog" class="navbar-link navlinks">Bizning blog</a>
               <a href="#feedback" class="navbar-link navlinks">BIZ BILAN BOG'LANING</a>
             </div>
@@ -202,15 +204,15 @@
         <ul class="splide__list">
           <li class="splide__slide">
             <div class="tour-ticket">
-              <img class="tour-bg" src="/assets/imgs/background11.jpg">
+              <img class="tour-bg" src="/assets/imgs/tash1.jpg">
               <div class="tour-content">
-                  <h2 class="tour-title">Toshkent Safari</h3>
+                  <h2 class="tour-title">Toshkentga ekskursiya</h3>
                   <ul class="tour-description fa-ul">
-                      <li class="ldesc"><span class="fa-li"><i class="fas fa-info"></i></span>Xiva bo'ylab guruh safari davomida siz shaharning eng mashhur diqqatga sazovor joylarini ko'rasiz.</li>
-                      <li><span class="fa-li"><i class="fas fa-calendar"></i></span>6-7 soat</li>
-                      <li><span class="fa-li"><i class="fas fa-dollar-sign"></i></span>$79.00</li>
+                      <li class="ldesc"><span class="fa-li"><i class="fas fa-info"></i></span>Shahar bo'ylab ushbu guruh safari davomida Toshkentning eng mashhur diqqatga sazovor joylarini ko'rib chiqing.</li>
+                      <li><span class="fa-li"><i class="fas fa-calendar"></i></span>1 kun</li>
+                      <li><span class="fa-li"><i class="fas fa-dollar-sign"></i></span>$140</li>
                   </ul>
-                  <a class="tour-btn" href="#feedback" id="btn">Biz bilan bog'laning!</a>
+                  <a class="tour-btn" href="#feedback" id="btn1">Biz bilan bog'laning!</a>
               </div>
             </div>
           </li>
@@ -218,27 +220,27 @@
             <div class="tour-ticket">
               <img class="tour-bg" src="/assets/imgs/bg5.jpg">
               <div class="tour-content">
-                  <h2 class="tour-title">Toshkent Safari</h3>
+                  <h2 class="tour-title">O'zbekiston bo'ylab sayohat - bestseller</h3>
                   <ul class="tour-description fa-ul">
-                      <li class="ldesc"><span class="fa-li"><i class="fas fa-info"></i></span>Xiva bo'ylab guruh safari davomida siz shaharning eng mashhur diqqatga sazovor joylarini ko'rasiz.</li>
-                      <li><span class="fa-li"><i class="fas fa-calendar"></i></span>6-7 soat</li>
-                      <li><span class="fa-li"><i class="fas fa-dollar-sign"></i></span>$79.00</li>
+                      <li class="ldesc"><span class="fa-li"><i class="fas fa-info"></i></span>Yaxshi rejalashtirilgan marshrut va unutilmas sayohat uchun eng mashhur paketlardan biri.</li>
+                      <li><span class="fa-li"><i class="fas fa-calendar"></i></span>7 kun</li>
+                      <li><span class="fa-li"><i class="fas fa-dollar-sign"></i></span>$995 2-3 kishi uchun</li>
                   </ul>
-                  <a class="tour-btn" href="#feedback" id="btn">Biz bilan bog'laning!</a>
+                  <a class="tour-btn" href="#feedback" id="btn2">Biz bilan bog'laning!</a>
               </div>
             </div>
           </li>
           <li class="splide__slide">
             <div class="tour-ticket">
-              <img class="tour-bg" src="/assets/imgs/bg9.jpg">
+              <img class="tour-bg" src="/assets/imgs/background11.jpg">
               <div class="tour-content">
-                  <h2 class="tour-title">Toshkent Safari</h3>
+                  <h2 class="tour-title">O'zbekistonga byudjet safari</h3>
                   <ul class="tour-description fa-ul">
-                      <li class="ldesc"><span class="fa-li"><i class="fas fa-info"></i></span>Xiva bo'ylab guruh safari davomida siz shaharning eng mashhur diqqatga sazovor joylarini ko'rasiz.</li>
-                      <li><span class="fa-li"><i class="fas fa-calendar"></i></span>6-7 soat</li>
-                      <li><span class="fa-li"><i class="fas fa-dollar-sign"></i></span>$79.00</li>
+                      <li class="ldesc"><span class="fa-li"><i class="fas fa-info"></i></span>O'zbek madaniyati, kelib chiqishi va oshxonasi bilan tanishish va byudjetingizni tejash uchun O'zbekistonga sayohatlar!</li>
+                      <li><span class="fa-li"><i class="fas fa-calendar"></i></span>6 kun</li>
+                      <li><span class="fa-li"><i class="fas fa-dollar-sign"></i></span>$425</li>
                   </ul>
-                  <a class="tour-btn" href="#feedback" id="btn">Biz bilan bog'laning!</a>
+                  <a class="tour-btn" href="#feedback" id="btn3">Biz bilan bog'laning!</a>
               </div>
             </div>
           </li>
@@ -368,6 +370,17 @@
                   />
                 </div>
                 <div class="form-group">
+                  <label for="phone" class="form-control-label">Telefon raqami</label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    autocomplete="off"
+                    id="phone"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="form-group">
                   <label for="msg" class="form-control-label">Xabar</label>
                   <textarea
                     name="msg"
@@ -487,10 +500,18 @@
 
         const textarea = document.getElementById('msg');
 
-        const btn = document.getElementById('btn');
+        const btn1 = document.getElementById('btn1');
+        const btn2 = document.getElementById('btn2');
+        const btn3 = document.getElementById('btn3');
 
-        btn.addEventListener('click', function handleClick() {
-          textarea.value += 'Men "Toshkent Safari" safari haqida ko\'proq bilishni istardim';
+        btn1.addEventListener('click', function handleClick() {
+          textarea.value += 'Men "Toshkentga ekskursiya" safari haqida ko\'proq bilishni istardim';
+        });
+        btn2.addEventListener('click', function handleClick() {
+          textarea.value += 'Men "O\'zbekiston bo\'ylab sayohat - bestseller" safari haqida ko\'proq bilishni istardim';
+        });
+        btn3.addEventListener('click', function handleClick() {
+          textarea.value += 'Men "O\'zbekistonga byudjet safari" safari haqida ko\'proq bilishni istardim';
         });
 
     </script>

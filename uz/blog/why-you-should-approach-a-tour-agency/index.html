@@ -64,7 +64,16 @@
           <div class="navbar-info">
             <div class="navbar-info-row menu">
                 <a href="/uz" class="navbar-link navlinks">Biz haqimizda</a>
-                <a class="navbar-link navlinks">Sayohat</a>
+                <div class="navbar-dropdown droptr">
+                  <a class="navbar-link droptrl">Sayohat</a>
+                  <div class="navbar-dropdown-menu ">
+                    <a href="/uz/visit/bukhara/" class="navbar-link">Buxoro</a>
+                    <a href="/uz/visit/khiva/" class="navbar-link">Xiva</a>
+                    <a href="/uz/visit/samarkand/" class="navbar-link">Samarqand</a>
+                    <a href="/uz/visit/tashkent/" class="navbar-link">Toshkent</a>
+                  </div>
+                </div>
+                <a href="/uz/gallery/" class="navbar-link navlinks">Galereya</a>
                 <a href="#blog" class="navbar-link navlinks">Bizning blog</a>
                 <a href="#feedback" class="navbar-link navlinks">Biz bilan bog'laning</a>
             </div>
@@ -322,6 +331,17 @@
                     autocomplete="off"
                     id="email"
                     class="form-control"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="phone" class="form-control-label">Telefon raqami</label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    autocomplete="off"
+                    id="phone"
+                    class="form-control"
+                    required
                   />
                 </div>
                 <div class="form-group">

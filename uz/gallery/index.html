@@ -45,6 +45,13 @@
     <script src="/assets/js/mobile-detect.js"></script>
     <script src="/assets/js/axios.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+
+
     <!-- change all links for cdn-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
@@ -104,9 +111,9 @@
             </div>
           </div>
           <div class="navbar-dropdown">
-            <a href="/en/visit/samarkand/" class="navbar-link">EN</a>
+            <a href="/en/gallery/" class="navbar-link">EN</a>
             <div class="navbar-dropdown-menu">
-              <a href="/ru/visit/samarkand/" class="navbar-link">RU</a>
+              <a href="/ru/gallery/" class="navbar-link">RU</a>
             </div>
           </div>
         </div>
@@ -114,164 +121,44 @@
     </nav>
     <header class="header">
       <div class="header-overlay">
-        <img class="background" src="/assets/imgs/bg12.jpg" alt=""></li>
-        <!-- <img
-          src="../assets/imgs/background1.jpg"
+        
+        <img
+          src="/assets/imgs/background12.png"
           class="background"
           alt="travelling"
-        /> -->
+        />
         <div class="header-intro">
           <div class="header-intro-caption">Adventure</div>
-          <h1 class="header-intro-title">Samarqand <span>bilan tanishing</span></h1>
+          <h1 class="header-intro-title">
+            <span>Galereyamiz</span>bilan tanishing
+          </h1>
         </div>
         <a href="#about" class="scroll-down"
           ><i class="fas fa-chevron-down"></i
         ></a>
       </div>
     </header>
+
     <section class="section about" id="about">
-      <div class="section-overlay">
-        <div class="section-row aifs">
-          
-
-          <div class="col-md-7 pl">
-            <h3 class="section-title">Samarqand haqida</h3>
-            <div class="section-content">
-              <p>
-                O'zbekistonning qoq markazida joylashgan Samarqand qadimiy tsivilizatsiyalar haqida hikoya qiluvchi va tashrif buyuruvchilarni o'zining hayratlanarli arxitekturasi va boy madaniy merosidan hayratda qoldiradigan shahardir. Samarqandga etib borganingizda, o'tmishning buyukligi hozirgi zamon dinamikasi bilan birlashtirilgan o'tmishga ko'chirilganga o'xshaysiz.
-              </p>
-              <p>
-                Shaharning marvaridi Registon maydoni bo'lib, u murakkab plitkalar va ulug'vor arklar bilan bezatilgan ajoyib madrasa ansamblidir. Ulug'bek madrasasi, Sherdor madrasasi va tilla Kori madrasasi kabi me'morchilik mo " jizalari oldida turib, sizni o'tgan davrga olib borasiz.
-              </p>
-              <img
-              src="/assets/imgs/bg5.jpg"
-              style="
-                width: 100%;
-                object-fit: cover;
-                border-radius: 10px;
-                overflow: hidden;
-              "
-              height="315"
-              alt=""
-            />
-            </div>
-          </div>
-
-          <div class="col-md-5 section-content">
-            <!-- <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/4MFcmreAUhs"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe> -->
-            <img
-              src="/assets/imgs/bg9.jpg"
-              style="
-                width: 100%;
-                object-fit: cover;
-                border-radius: 10px;
-                overflow: hidden;
-                margin-top: 16px;
-              "
-              height="315"
-              alt="About us"
-            />
-            <div class="section-content">
-              <p style="margin-top: 16px;">
-                Samarqandga tashrif buyurish nafaqat me'moriy mo " jizalar bilan tanishish, balki vaqt sinovidan o'tgan shaharning ruhi bilan muloqot qilish imkoniyatidir. Mahalliy aholining iliqligi va mehmondo'stligi, ko'chalarning shovqinli muhiti va shaharning ulug'vor yodgorliklari orqali qadimgi afsonalarning shivirlashi Samarqandni unutilmas joyga aylantiradi.
-              </p>
-              <p>
-                Maxsus tayyorlangan bayramlardan MICE sayohatlarigacha, oilaviy bayramlardan tortib yangi ufqlarni o'rganish, <strong style="color:var(--color)">WORLDWIDE <span style="color: var(--secondColor)">TRAVEL</span></strong> hammaga hamroh bo'lsin birga.
-              </p>
-              <!-- <strong style="color:var(--color)">WORLDWIDE <span style="color: var(--secondColor)">TRAVEL</span></strong> -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section video">
         <div class="section-overlay">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/1feAEm1EnSI?start=12" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <a
+              data-fancybox="gallery"
+              data-src="https://lipsum.app/id/2/1600x1200"
+              data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code"
+              >
+              <img src="https://lipsum.app/id/2/400x300" width="400" height="300" alt="" />
+          </a>
+  
+          <a data-fancybox="gallery" data-src="https://lipsum.app/id/1/1600x1200">
+              <img src="https://lipsum.app/id/1/400x300" width="400" height="300" alt="" />
+          </a>
+  
+          <a data-fancybox="gallery" data-src="https://lipsum.app/id/3/1600x1200">
+              <img src="https://lipsum.app/id/3/400x300" width="400" height="300" alt="" />
+          </a>
+  
         </div>
-    </section>
-
-    <section class="splide" id="splidetour"
-    style="
-      margin: 60px;
-    ">
-      <div class="splide__track">
-        <ul class="splide__list">
-          <li class="splide__slide">
-            <div class="tour-ticket">
-              <img class="tour-bg" src="/assets/imgs/tash1.jpg">
-              <div class="tour-content">
-                  <h2 class="tour-title">Samarqandga bir kun</h3>
-                  <ul class="tour-description fa-ul">
-                      <li class="ldesc"><span class="fa-li"><i class="fas fa-info"></i></span>Samarqandni Buyuk Tamerlan davrini jonlantiradigan ajoyib go'zallik yodgorliklari kutib oladi.</li>
-                      <li><span class="fa-li"><i class="fas fa-calendar"></i></span>1 kun</li>
-                      <li><span class="fa-li"><i class="fas fa-dollar-sign"></i></span>$210</li>
-                  </ul>
-                  <a class="tour-btn" href="#feedback" id="btn1">Biz bilan bog'laning!</a>
-              </div>
-            </div>
-          </li>
-          <li class="splide__slide">
-            <div class="tour-ticket">
-              <img class="tour-bg" src="/assets/imgs/bg5.jpg">
-              <div class="tour-content">
-                  <h2 class="tour-title">O'zbekistonda bestseller</h3>
-                  <ul class="tour-description fa-ul">
-                      <li class="ldesc"><span class="fa-li"><i class="fas fa-info"></i></span>Yaxshi rejalashtirilgan marshrut va unutilmas sayohat uchun eng mashhur paketlardan biri.</li>
-                      <li><span class="fa-li"><i class="fas fa-calendar"></i></span>7 kun</li>
-                      <li><span class="fa-li"><i class="fas fa-dollar-sign"></i></span>$995 2-3 kishi uchun</li>
-                  </ul>
-                  <a class="tour-btn" href="#feedback" id="btn2">Biz bilan bog'laning!</a>
-              </div>
-            </div>
-          </li>
-          <li class="splide__slide">
-            <div class="tour-ticket">
-              <img class="tour-bg" src="/assets/imgs/background11.jpg">
-              <div class="tour-content">
-                  <h2 class="tour-title">O'zbekistonga byudjet safari</h3>
-                  <ul class="tour-description fa-ul">
-                      <li class="ldesc"><span class="fa-li"><i class="fas fa-info"></i></span>O'zbek madaniyati, kelib chiqishi va oshxonasi bilan tanishish va byudjetingizni tejash uchun O'zbekistonga sayohatlar!</li>
-                      <li><span class="fa-li"><i class="fas fa-calendar"></i></span>6 kun</li>
-                      <li><span class="fa-li"><i class="fas fa-dollar-sign"></i></span>$425</li>
-                  </ul>
-                  <a class="tour-btn" href="#feedback" id="btn3">Biz bilan bog'laning!</a>
-              </div>
-            </div>
-          </li>
-          <style>
-            .tour-ticket{
-              margin-right: auto;
-              margin-left: auto;
-              width: 90%;
-              height: 200px;
-            }
-
-            .tour-title{
-              margin-left: 5%;
-            }
-
-            .tour-btn{
-              background-color: var(--color);
-              color: white;
-            }
-
-            .tour-btn:hover{
-              color: white;
-            }
-          </style>
-        </ul>
-      </div>
-    </section>
-    
+      </section>
 
     <section class="section blog" id="blog">
       <div class="section-overlay">
@@ -473,17 +360,6 @@
         } );
 
         document.addEventListener( 'DOMContentLoaded', function() {
-            new Splide('#splidetour', {
-              type    : 'loop',
-              perPage : 2,
-              pagination: false,
-              breakpoints: {
-                1215: { perPage: 1 },
-              },
-            }).mount();
-        } );
-
-        document.addEventListener( 'DOMContentLoaded', function() {
             new Splide('#splideblog', {
               type    : 'loop',
               perPage : 3,
@@ -501,22 +377,9 @@
             }).mount();
         } );
 
-        const textarea = document.getElementById('msg');
-
-        const btn1 = document.getElementById('btn1');
-        const btn2 = document.getElementById('btn2');
-        const btn3 = document.getElementById('btn3');
-
-        btn1.addEventListener('click', function handleClick() {
-          textarea.value += 'Men "Samarqandga bir kun" safari haqida ko\'proq bilishni istardim';
+        Fancybox.bind("[data-fancybox]", {
+            // Your custom options
         });
-        btn1.addEventListener('click', function handleClick() {
-          textarea.value += 'Men "O\'zbekistonda bestseller" safari haqida ko\'proq bilishni istardim';
-        });
-        btn1.addEventListener('click', function handleClick() {
-          textarea.value += 'Men "O\'zbekistonga byudjet safari" safari haqida ko\'proq bilishni istardim';
-        });
-
     </script>
 
 

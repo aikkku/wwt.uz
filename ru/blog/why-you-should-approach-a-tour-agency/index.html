@@ -64,7 +64,16 @@
           <div class="navbar-info">
             <div class="navbar-info-row menu">
                 <a href="/ru" class="navbar-link navlinks">О нас</a>
-                <a class="navbar-link navlinks">Путешествие</a>
+                <div class="navbar-dropdown droptr">
+                <a class="navbar-link droptrl">Путешествие</a>
+                <div class="navbar-dropdown-menu ">
+                  <a href="/ru/visit/bukhara/" class="navbar-link">Бухара</a>
+                  <a href="/ru/visit/khiva/" class="navbar-link">Хива</a>
+                  <a href="/ru/visit/samarkand/" class="navbar-link">Самарканд</a>
+                  <a href="/ru/visit/tashkent/" class="navbar-link">Ташкент</a>
+                </div>
+              </div>
+              <a href="/ru/gallery/" class="navbar-link navlinks">Галерея</a>
                 <a href="#blog" class="navbar-link navlinks">Наш блог</a>
                 <a href="#feedback" class="navbar-link navlinks">Связаться с нами</a>
             </div>
@@ -322,6 +331,17 @@
                     autocomplete="off"
                     id="email"
                     class="form-control"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="phone" class="form-control-label">Номер телефона</label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    autocomplete="off"
+                    id="phone"
+                    class="form-control"
+                    required
                   />
                 </div>
                 <div class="form-group">

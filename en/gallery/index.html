@@ -28,6 +28,14 @@
     <link rel="stylesheet" href="/assets/css/zt-indent.css" />
     <link rel="stylesheet" href="/assets/css/bootstrap-reboot.min.css" />
     <link rel="stylesheet" href="/bundle.min.css" />
+    
+    <!-- https://fancyapps.com/fancybox/getting-started/ for gallery only -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+
     <link rel="icon" href="/assets/imgs/logo.ico" type="image/x-icon">
     <title>WorldWide Travel - travel agency</title>
     <script
@@ -96,9 +104,9 @@
             </div>
           </div>
           <div class="navbar-dropdown">
-            <a href="/uz/visit/samarkand/" class="navbar-link">UZ</a>
+            <a href="/uz/gallery/" class="navbar-link">UZ</a>
             <div class="navbar-dropdown-menu">
-              <a href="/ru/visit/samarkand/" class="navbar-link">RU</a>
+              <a href="/ru/gallery/" class="navbar-link">RU</a>
             </div>
           </div>
         </div>
@@ -106,7 +114,7 @@
     </nav>
     <header class="header">
       <div class="header-overlay">
-        <img class="background" src="/assets/imgs/bg12.jpg" alt=""></li>
+        <img class="background" src="/assets/imgs/buk2.jpg" alt=""></li>
         <!-- <img
           src="../assets/imgs/background1.jpg"
           class="background"
@@ -114,7 +122,7 @@
         /> -->
         <div class="header-intro">
           <div class="header-intro-caption">Adventure</div>
-          <h1 class="header-intro-title">Explore <span>Samarkand</span></h1>
+          <h1 class="header-intro-title">Explore <span>Gallery</span></h1>
         </div>
         <a href="#about" class="scroll-down"
           ><i class="fas fa-chevron-down"></i
@@ -123,147 +131,24 @@
     </header>
     <section class="section about" id="about">
       <div class="section-overlay">
-        <div class="section-row aifs">
-          
+        <a
+            data-fancybox="gallery"
+            data-src="https://lipsum.app/id/2/1600x1200"
+            data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code"
+            >
+            <img src="https://lipsum.app/id/2/400x300" width="400" height="300" alt="" />
+        </a>
 
-          <div class="col-md-7 pl">
-            <h3 class="section-title">About Samarkand</h3>
-            <div class="section-content">
-              <p>
-                Nestled in the heart of Uzbekistan, Samarkand is a city that whispers tales of ancient civilizations and leaves visitors in awe of its breathtaking architecture and rich cultural heritage. Stepping into Samarkand is like stepping back in time, where the grandeur of the past meets the vibrancy of the present.
-              </p>
-              <p>
-                The city's crown jewel is the Registan Square, a magnificent ensemble of madrasahs adorned with intricate tile work and majestic arches. Standing in the presence of such architectural marvels, like the Ulugh Beg Madrasah, Sher-Dor Madrasah, and Tilla-Kori Madrasah, is a humbling experience that transports you to a bygone era.
-              </p>
-              <img
-              src="/assets/imgs/bg5.jpg"
-              style="
-                width: 100%;
-                object-fit: cover;
-                border-radius: 10px;
-                overflow: hidden;
-              "
-              height="315"
-              alt=""
-            />
-            </div>
-          </div>
+        <a data-fancybox="gallery" data-src="https://lipsum.app/id/1/1600x1200">
+            <img src="https://lipsum.app/id/1/400x300" width="400" height="300" alt="" />
+        </a>
 
-          <div class="col-md-5 section-content">
-            <!-- <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/4MFcmreAUhs"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe> -->
-            <img
-              src="/assets/imgs/bg9.jpg"
-              style="
-                width: 100%;
-                object-fit: cover;
-                border-radius: 10px;
-                overflow: hidden;
-                margin-top: 16px;
-              "
-              height="315"
-              alt="About us"
-            />
-            <div class="section-content">
-              <p style="margin-top: 16px;">
-                Visiting Samarkand is more than just witnessing architectural wonders; it is an opportunity to connect with the soul of a city that has stood the test of time. The warmth and hospitality of the locals, the bustling atmosphere of the streets, and the whispers of ancient tales that echo through the city's magnificent monuments make Samarkand an unforgettable destination.
-              </p>
-              <p>
-                From custom-made holidays to MICE tours, from family holidays to exploration of new horizons, let <strong style="color:var(--color)">WORLDWIDE <span style="color: var(--secondColor)">TRAVEL</span></strong> accompany all along.
-              </p>
-              <!-- <strong style="color:var(--color)">WORLDWIDE <span style="color: var(--secondColor)">TRAVEL</span></strong> -->
-            </div>
-          </div>
-        </div>
+        <a data-fancybox="gallery" data-src="https://lipsum.app/id/3/1600x1200">
+            <img src="https://lipsum.app/id/3/400x300" width="400" height="300" alt="" />
+        </a>
+
       </div>
     </section>
-
-    <section class="section video">
-        <div class="section-overlay">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/1feAEm1EnSI?start=12" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-    </section>
-
-    <section class="splide" id="splidetour"
-    style="
-      margin: 60px;
-    ">
-      <div class="splide__track">
-        <ul class="splide__list">
-          <li class="splide__slide">
-            <div class="tour-ticket">
-              <img class="tour-bg" src="/assets/imgs/tash1.jpg">
-              <div class="tour-content">
-                  <h2 class="tour-title">Day tour to Samarkand</h3>
-                  <ul class="tour-description fa-ul">
-                      <li class="ldesc"><span class="fa-li"><i class="fas fa-info"></i></span>Samarkand welcomes with monuments of stunning beauty reviving the time of the Great Tamerlane age.</li>
-                      <li><span class="fa-li"><i class="fas fa-calendar"></i></span>1 day</li>
-                      <li><span class="fa-li"><i class="fas fa-dollar-sign"></i></span>$210</li>
-                  </ul>
-                  <a class="tour-btn" href="#feedback" id="btn1">Contact us!</a>
-              </div>
-            </div>
-          </li>
-          <li class="splide__slide">
-            <div class="tour-ticket">
-              <img class="tour-bg" src="/assets/imgs/bg5.jpg">
-              <div class="tour-content">
-                  <h2 class="tour-title">Bestseller Uzbekistan Tour</h3>
-                  <ul class="tour-description fa-ul">
-                      <li class="ldesc"><span class="fa-li"><i class="fas fa-info"></i></span>Well-planned itinerary and one of the most popular packages for an unforgettable journey.</li>
-                      <li><span class="fa-li"><i class="fas fa-calendar"></i></span>7 days</li>
-                      <li><span class="fa-li"><i class="fas fa-dollar-sign"></i></span>$995 for 2-3 people</li>
-                  </ul>
-                  <a class="tour-btn" href="#feedback" id="btn2">Contact us!</a>
-              </div>
-            </div>
-          </li>
-          <li class="splide__slide">
-            <div class="tour-ticket">
-              <img class="tour-bg" src="/assets/imgs/background11.jpg">
-              <div class="tour-content">
-                  <h2 class="tour-title">Budget tour to Uzbekistan</h3>
-                  <ul class="tour-description fa-ul">
-                      <li class="ldesc"><span class="fa-li"><i class="fas fa-info"></i></span>Tours to Uzbekistan to experience Uzbek culture, origins, and cuisine and save your budget!</li>
-                      <li><span class="fa-li"><i class="fas fa-calendar"></i></span>6 days</li>
-                      <li><span class="fa-li"><i class="fas fa-dollar-sign"></i></span>$425</li>
-                  </ul>
-                  <a class="tour-btn" href="#feedback" id="btn3">Contact us!</a>
-              </div>
-            </div>
-          </li>
-          <style>
-            .tour-ticket{
-              margin-right: auto;
-              margin-left: auto;
-              width: 90%;
-              height: 200px;
-            }
-
-            .tour-title{
-              margin-left: 5%;
-            }
-
-            .tour-btn{
-              background-color: var(--color);
-              color: white;
-            }
-
-            .tour-btn:hover{
-              color: white;
-            }
-          </style>
-        </ul>
-      </div>
-    </section>
-    
 
     <section class="section blog" id="blog">
       <div class="section-overlay">
@@ -277,7 +162,7 @@
                     <ul class="splide__list">
                       <li class="splide__slide">
                         <div class="blog-ticket">
-                          <img class="blog-bg" src="/assets/imgs/background12.png" alt="">
+                          <img class="blog-bg" src="/assets/imgs/background12.png" alt="How to get a visa for Uzbekistan? blog background">
                           <h3 class="blog-title">How to get a visa for Uzbekistan?</h3>
                           <div class="blog-description">
                             Essential Uzbekistan Visa Guide: Unlock the Magic of a Captivating Journey!
@@ -290,7 +175,7 @@
                       </li>
                       <li class="splide__slide">
                         <div class="blog-ticket">
-                            <img class="blog-bg" src="/assets/imgs/background13.png" alt="">
+                            <img class="blog-bg" src="/assets/imgs/background13.png" alt="Why you shuold approach a tour agency? blog background">
                             <h3 class="blog-title">Why you should approach a tour agency?</h3>
                             <div class="blog-description">
                                 Unleash the Benefits: Choose WorldWide Travel for a Seamless, Personalized, and Memorable Journey!
@@ -303,7 +188,7 @@
                       </li>
                       <li class="splide__slide">
                         <div class="blog-ticket">
-                            <img class="blog-bg" src="/assets/imgs/progress.jpg" alt="">
+                            <img class="blog-bg" src="/assets/imgs/progress.jpg" alt="blog is in progrgress blog background">
                             <h3 class="blog-title">Blog is in progress</h3>
                             <div class="blog-description">
                                 It will be done in a few days, but you can enjoy reading our other blogs.
@@ -316,7 +201,7 @@
                       </li>
                       <li class="splide__slide">
                         <div class="blog-ticket">
-                            <img class="blog-bg" src="/assets/imgs/bg12.jpg" alt="">
+                            <img class="blog-bg" src="/assets/imgs/bg8.jpg" alt="blog is in progrgress blog background">
                             <h3 class="blog-title">Blog is in progress</h3>
                             <div class="blog-description">
                                 It will be done in a few days, but you can enjoy reading our other blogs.
@@ -338,13 +223,14 @@
       </div>
     </section>
 
+
     <section class="section feedback" id="feedback">
       <div class="section-overlay">
         <div class="section-row aifs">
           <div class="col-md-7 pl">
             <h3 class="section-title">Contact us</h3>
             <div class="section-content">
-              <form action="https://formsubmit.co/musorka.asila@gmail.com" method="POST" class="form form-vertical">
+              <form action="https://formsubmit.co/kodniy@gmail.com" method="POST" class="form form-vertical">
                 <div class="form-group">
                   <label for="name" class="form-control-label">Name</label>
                   <input
@@ -487,17 +373,6 @@
         } );
 
         document.addEventListener( 'DOMContentLoaded', function() {
-            new Splide('#splidetour', {
-              type    : 'loop',
-              perPage : 2,
-              pagination: false,
-              breakpoints: {
-                1215: { perPage: 1 },
-              },
-            }).mount();
-        } );
-
-        document.addEventListener( 'DOMContentLoaded', function() {
             new Splide('#splideblog', {
               type    : 'loop',
               perPage : 3,
@@ -515,25 +390,10 @@
             }).mount();
         } );
 
-        const textarea = document.getElementById('msg');
-
-        const btn1 = document.getElementById('btn1');
-
-        btn1.addEventListener('click', function handleClick() {
-          textarea.value += 'I am interested in Day tour to Samarkand';
+        Fancybox.bind("[data-fancybox]", {
+            // Your custom options
         });
 
-        const btn2 = document.getElementById('btn2');
-
-        btn2.addEventListener('click', function handleClick() {
-          textarea.value += 'I am interested in Bestseller Uzbekistan Tour';
-        });
-
-        const btn3 = document.getElementById('btn3');
-
-        btn3.addEventListener('click', function handleClick() {
-          textarea.value += 'I am interested in Budget tour to Uzbekistan';
-        });
     </script>
 
 
@@ -592,7 +452,7 @@
         <img
           src="https://mc.yandex.ru/watch/92550825"
           style="position: absolute; left: -9999px"
-          alt=""
+          alt="how to get to worldwide travel uz office using yandex maps"
         />
       </div>
     </noscript>

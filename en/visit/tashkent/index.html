@@ -67,11 +67,13 @@
               <div class="navbar-dropdown droptr">
                 <a class="navbar-link droptrl">Travel</a>
                 <div class="navbar-dropdown-menu ">
+                  <a href="/en/visit/bukhara/" class="navbar-link">Bukhara</a>
                   <a href="/en/visit/khiva/" class="navbar-link">Khiva</a>
                   <a href="/en/visit/samarkand/" class="navbar-link">Samarkand</a>
                   <a href="/en/visit/tashkent/" class="navbar-link">Tashkent</a>
                 </div>
               </div>
+              <a href="/en/gallery/" class="navbar-link navlinks">Gallery</a>
               <a href="#blog" class="navbar-link navlinks">Our blog</a>
               <a href="#feedback" class="navbar-link navlinks">Contact us</a>
             </div>
@@ -200,37 +202,37 @@
                   <ul class="tour-description fa-ul">
                       <li class="ldesc"><span class="fa-li"><i class="fas fa-info"></i></span>Check out the most famous landmarks in Tashkent on this group city tour.</li>
                       <li><span class="fa-li"><i class="fas fa-calendar"></i></span>6-7 hours</li>
-                      <li><span class="fa-li"><i class="fas fa-dollar-sign"></i></span>$79.00</li>
+                      <li><span class="fa-li"><i class="fas fa-dollar-sign"></i></span>$140</li>
                   </ul>
-                  <a class="tour-btn" href="#feedback" id="btn">Contact us!</a>
+                  <a class="tour-btn" href="#feedback" id="btn1">Contact us!</a>
               </div>
             </div>
           </li>
           <li class="splide__slide">
             <div class="tour-ticket">
-              <img class="tour-bg" src="/assets/imgs/tash2.jpg">
+              <img class="tour-bg" src="/assets/imgs/bg5.jpg">
               <div class="tour-content">
-                  <h2 class="tour-title">Tashkent City Tour</h3>
+                  <h2 class="tour-title">Bestseller Uzbekistan Tour</h3>
                   <ul class="tour-description fa-ul">
-                      <li class="ldesc"><span class="fa-li"><i class="fas fa-info"></i></span>Check out the most famous landmarks in Tashkent on this group city tour.</li>
-                      <li><span class="fa-li"><i class="fas fa-calendar"></i></span>6-7 hours</li>
-                      <li><span class="fa-li"><i class="fas fa-dollar-sign"></i></span>$79.00</li>
+                      <li class="ldesc"><span class="fa-li"><i class="fas fa-info"></i></span>Well-planned itinerary and one of the most popular packages for an unforgettable journey.</li>
+                      <li><span class="fa-li"><i class="fas fa-calendar"></i></span>7 days</li>
+                      <li><span class="fa-li"><i class="fas fa-dollar-sign"></i></span>$995 for 2-3 people</li>
                   </ul>
-                  <a class="tour-btn" href="#feedback" id="btn">Contact us!</a>
+                  <a class="tour-btn" href="#feedback" id="btn2">Contact us!</a>
               </div>
             </div>
           </li>
           <li class="splide__slide">
             <div class="tour-ticket">
-              <img class="tour-bg" src="/assets/imgs/tash3.jpg">
+              <img class="tour-bg" src="/assets/imgs/background11.jpg">
               <div class="tour-content">
-                  <h2 class="tour-title">Tashkent City Tour</h3>
+                  <h2 class="tour-title">Budget tour to Uzbekistan</h3>
                   <ul class="tour-description fa-ul">
-                      <li class="ldesc"><span class="fa-li"><i class="fas fa-info"></i></span>Check out the most famous landmarks in Tashkent on this group city tour.</li>
-                      <li><span class="fa-li"><i class="fas fa-calendar"></i></span>6-7 hours</li>
-                      <li><span class="fa-li"><i class="fas fa-dollar-sign"></i></span>$79.00</li>
+                      <li class="ldesc"><span class="fa-li"><i class="fas fa-info"></i></span>Tours to Uzbekistan to experience Uzbek culture, origins, and cuisine and save your budget!</li>
+                      <li><span class="fa-li"><i class="fas fa-calendar"></i></span>6 days</li>
+                      <li><span class="fa-li"><i class="fas fa-dollar-sign"></i></span>$425</li>
                   </ul>
-                  <a class="tour-btn" href="#feedback" id="btn">Contact us!</a>
+                  <a class="tour-btn" href="#feedback" id="btn3">Contact us!</a>
               </div>
             </div>
           </li>
@@ -311,7 +313,7 @@
                       </li>
                       <li class="splide__slide">
                         <div class="blog-ticket">
-                            <img class="blog-bg" src="/assets/imgs/bg3.jpg" alt="">
+                            <img class="blog-bg" src="/assets/imgs/bg12.jpg" alt="">
                             <h3 class="blog-title">Blog is in progress</h3>
                             <div class="blog-description">
                                 It will be done in a few days, but you can enjoy reading our other blogs.
@@ -358,6 +360,17 @@
                     name="email"
                     autocomplete="off"
                     id="email"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="phone" class="form-control-label">Phone number</label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    autocomplete="off"
+                    id="phone"
                     class="form-control"
                     required
                   />
@@ -501,12 +514,22 @@
 
         const textarea = document.getElementById('msg');
 
-        const btn = document.getElementById('btn');
+        const btn1 = document.getElementById('btn1');
+        const btn2 = document.getElementById('btn2');
+        const btn3 = document.getElementById('btn3');
 
-        btn.addEventListener('click', function handleClick() {
+
+        btn1.addEventListener('click', function handleClick() {
           textarea.value += 'I am interested in Tashkent City Tour';
         });
 
+        btn2.addEventListener('click', function handleClick() {
+          textarea.value += 'I am interested in Bestseller Uzbekistan Tour';
+        });
+
+        btn3.addEventListener('click', function handleClick() {
+          textarea.value += 'I am interested in Budget tour to Uzbekistan';
+        });
     </script>
 
 
