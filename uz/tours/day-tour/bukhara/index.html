@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Biz to'liq xizmat ko'rsatadigan sayyohlik kompaniyasimiz
+      moslashtirilgan sayohat echimlari va aeroportdagi yordam, mehmonxona va sayohat
+      diqqatga sazovor joylar. Bizda sayyohlar jamoasi bor
+      g'amxo'rlik qilish, O'zbekiston bo'ylab yurish uchun professionallar
+      maxsus ehtiyojlar."
+    />
+    <meta
+      name="keywords"
+      content="WorldWide Travel, turistik agentlik, travel agency, O'zbekiston bo'ylab sayohat qiling, wwt, Explore Uzbekistan, Markaziy Osiyo, sayyohlik agentligi, sayohat paketlari, madaniy tajribalar, sarguzasht turizmi, Ipak yo'li, tarixiy joylar, mahalliy oshxona, landshaft fotosuratlari, viza xizmatlari, manzillarni boshqarish, guruh sayohatlari, shaxsiy sayohatlar, mas'uliyatli turizm, ekoturizm, tog ' trekkingi, madaniy festivallar, qadimiy xarobalar, ko'chmanchi turmush tarzi, sayohat blogi"
+    />
+    <meta name="author" content="Asilbek Ismatilloev" />
+    <meta
+      property="og:title"
+      content="WorldWide Travel - sayyohlik agentligi"
+    />
+    <meta
+      property="og:description"
+      content="Biz to'liq xizmat ko'rsatadigan sayyohlik kompaniyasimiz
+      moslashtirilgan sayohat echimlari va aeroportdagi yordam, mehmonxona va sayohat
+      diqqatga sazovor joylar. Bizda sayyohlar jamoasi bor
+      g'amxo'rlik qilish, O'zbekiston bo'ylab yurish uchun professionallar
+      maxsus ehtiyojlar."
+    />
+    <meta property="og:image" content="/assets/imgs/bg9.jpg" />
+    <link rel="stylesheet" href="/assets/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/assets/css/all.min.css" />
+    <link rel="stylesheet" href="/assets/css/zt-indent.css" />
+    <link rel="stylesheet" href="/assets/css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="/bundle.min.css" />
+    <link rel="icon" href="/assets/imgs/logo.ico" type="image/x-icon" />
+    <title>WorldWide Travel - sayyohlik agentligi</title>
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=b6611803-8548-4b23-91e4-18753a3ab8f6&lang=ru_RU"
+      type="text/javascript"
+    ></script>
+    <script src="/assets/js/mobile-detect.js"></script>
+    <script src="/assets/js/axios.min.js"></script>
+
+    <!-- change all links for cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <!-- <script>
+      document.addEventListener( 'DOMContentLoaded', function() {
+        var splide = new Splide( '.splide' );
+        splide.mount();
+      } );
+    </script> -->
+  </head>
+  <body>
+    <nav id="nav" class="navbar">
+      <button class="navbar-toggler">
+        <div class="sticks">
+          <div class="sticks-el"></div>
+          <div class="sticks-el"></div>
+        </div>
+      </button>
+      <a href="/" class="navbar-brand">
+        <img src="/assets/imgs/logo.png" alt="World Wide Travel Logo" />
+        <div class="inline" id="brand-name">
+          <strong>WorldWide Travel</strong>
+        </div>
+      </a>
+      <div class="navbar-nav">
+        <div class="fadeUp">
+          <div class="navbar-info">
+            <div class="navbar-info-row menu">
+              <a href="#about" class="navbar-link navlinks">Tur haqida</a>
+              <div class="navbar-dropdown droptr">
+                <a class="navbar-link droptrl">O'zbekiston</a>
+                <div class="navbar-dropdown-menu">
+                  <a href="/uz/visit/uzbekistan/" class="navbar-link"
+                    >Sayohat</a
+                  >
+                  <a href="/uz/visit/bukhara/" class="navbar-link">Buxoro</a>
+                  <a href="/uz/visit/khiva/" class="navbar-link"
+                    >Xiva‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎
+                  </a>
+                  <a href="/uz/visit/valley/" class="navbar-link">Vodiy</a>
+                  <a href="/uz/visit/surkhandarya/" class="navbar-link"
+                    >Surkhandarya</a
+                  >
+                  <a href="/uz/visit/samarkand/" class="navbar-link"
+                    >Samarqand</a
+                  >
+                  <a href="/uz/visit/tashkent/" class="navbar-link">Toshkent</a>
+                </div>
+              </div>
+              <a href="#blog" class="navbar-link navlinks">Bizning blog</a>
+              <a href="/uz/gallery/" class="navbar-link navlinks">Galereya</a>
+              <a href="#feedback" class="navbar-link navlinks"
+                >BIZ BILAN BOG'LANING</a
+              >
+            </div>
+            <div class="navbar-info-row">
+              <div class="navbar-info-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="navbar-info-col">
+                <a href="tel:+998781200629">+998 (78) 120-06-29</a>
+                <a href="tel:+998909498080">+998 (90) 949-80-80</a>
+              </div>
+            </div>
+            <div class="navbar-info-row">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=worldwidetravel.uz@gmail.com">
+                <div class="navbar-info-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="navbar-dropdown">
+            <a href="/en/tours/day-tour/bukhara/" class="navbar-link">EN</a>
+            <div class="navbar-dropdown-menu">
+              <a href="/ru/tours/day-tour/bukhara/" class="navbar-link">RU</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header class="header">
+      <div class="header-overlay">
+        <img
+          src="/assets/imgs/background14.png"
+          class="background"
+          alt="travelling"
+        />
+        <div class="header-intro">
+          <div class="header-intro-caption">Tour</div>
+          <h1 class="header-intro-title">Buxoro bir kunda</h1>
+          <h3 class="header-intro-subtitle">1 kun. $99</h3>
+        </div>
+        <a href="#about" class="scroll-down"
+          ><i class="fas fa-chevron-down"></i
+        ></a>
+      </div>
+    </header>
+
+    <section class="section about" id="about">
+      <div class="section-overlay">
+        <h3 class="section-title">Tur haqida</h3>
+        <p>
+          Buxoroga xush kelibsiz, Buyuk Ipak yo'lining marvaridi va ulardan biri
+          O'zbekistonning eng go'zal shaharlari! Ushbu kunlik sayohat sizni
+          ochadi noyob me'moriy durdonalar, qadimiy madrasalar, ulug'vor
+          minoralar va jonli bozorlar.
+        </p>
+
+        <div class="accordion-box">
+          <button class="accordion">Labihovuz maydoni</button>
+          <div class="panel">
+            <div>
+              <p>
+                Bizning sayohatimiz Labihovuz bo'ylab sayr qilishdan boshlanadi,
+                eski shaharning Markaziy qismi. Bu erda siz katta hovuzni
+                ko'rasiz, madrasa va karvonsaroylar bilan o'ralgan va
+                atmosferani his eting O'rta asr Buxorosi.
+              </p>
+              <p>
+                Keyin biz maydondagi eng chiroyli madrasalardan biriga tashrif
+                buyuramiz. Bu 17-asrda qurilgan va mozaikalari bilan mashhur va
+                asl arxitekturasi bilan.
+              </p>
+            </div>
+          </div>
+
+          <button class="accordion">Poi-Kalon Majmuasi</button>
+          <div class="panel">
+            <div>
+              <p>
+                Labihovuzdan keyin biz Buxoro ramzlaridan biriga boramiz – Kalon
+                minorasi. Minora balandligi 47 metrni tashkil etadi va u shunday
+                edi XII asrda qurilgan. Bu bir paytlar ulug'vor bino cho'lni
+                kesib o'tgan karvonlar uchun mayoq bo'lib xizmat qildi.
+              </p>
+              <p>
+                Minora yonida ajoyib Kalon masjidi joylashgan markaziy Osiyodagi
+                eng yirik masjidlar. U 12 minggacha sig'adi inson o'zining
+                ulug'vor kamarlari va gumbazlari bilan hayratga soladi.
+              </p>
+              <p>
+                Ekskursiyaning ertalabki qismini miri Arab madrasasiga tashrif
+                buyurish bilan yakunlaymiz, eng mashhur Islom ta'lim
+                muassasalaridan biri XVI asrda tashkil etilgan mintaqa.
+              </p>
+            </div>
+          </div>
+
+          <button class="accordion">Ark Qal'asi</button>
+          <div class="panel">
+            <div>
+              <p>
+                Poi Kalonga tashrif buyurganimizdan so'ng, biz qadimiy Ark
+                qal'asiga boramiz, Buxoro amirlarining qarorgohi bo'lgan. Bu
+                erda siz ko'rasiz saroylar, ziyofat zallari, masjidlar va
+                qamoqxonalar va ular haqida bilib oling Buxoro hukmdorlari
+                hayoti.
+              </p>
+            </div>
+          </div>
+
+          <button class="accordion">Ismoil Samani Maqbarasi</button>
+          <div class="panel">
+            <div>
+              <p>
+                Marshrutimizning keyingi nuqtasi eng qadimgi va yaxshi
+                narsalardan biridir o'rta Osiyoda Islom me'morchiligining
+                saqlanib qolgan yodgorliklari. Maqbara IX-X asrlarda qurilgan va
+                o'ziga xosligi bilan ajralib turadi g'isht ishlari.
+              </p>
+            </div>
+          </div>
+
+          <button class="accordion">An'anaviy choyxonada gazak</button>
+          <div class="panel">
+            <div>
+              <p>
+                Sizni kutayotgan mahalliy choyxonalardan birida tushlik qilish
+                uchun to'xtalamiz palov kabi an'anaviy o'zbek taomlarini tatib
+                ko'rish, kabob va yangi mevalar. Bu erda siz lazzatlardan
+                bahramand bo'lishingiz mumkin va Buxoroning xushbo'y hidi va
+                ekskursiyani davom ettirishdan oldin dam oling.
+              </p>
+            </div>
+          </div>
+
+          <button class="accordion">
+            Ulug'bek va Abdullazizxon madrasalari
+          </button>
+          <div class="panel">
+            <div>
+              <p>
+                Peshindan keyin biz qurilgan Ulug'bek madrasasiga tashrif
+                buyuramiz XV asrda mashhur olim va hukmdor. Bu erda siz u haqida
+                bilib olasiz fan va ta'limga qo'shgan hissasi.
+              </p>
+              <p>
+                Ulug'bek madrasasi qarshisida Abdullazizxon madrasasi
+                joylashgan, XVII asrda qurilgan. U o'zining hashamati bilan
+                mashhur bezaklar va noyob bezaklar.
+              </p>
+            </div>
+          </div>
+
+          <button class="accordion">
+            Savdo qatorlari bozori va gumbazlari
+          </button>
+          <div class="panel">
+            <div>
+              <p>
+                Sayohatimizni Buxoroning qadimiy savdo gumbazlari bo'ylab sayr
+                qilish bilan yakunlaymiz. Bu erda siz esdalik sovg'alari,
+                gilamlar, ipak matolar va mahalliy hunarmandlarning boshqa
+                buyumlari.
+              </p>
+            </div>
+          </div>
+
+          <button class="accordion">Vidolashuv kechki ovqat</button>
+          <div class="panel">
+            <div>
+              <p>
+                Kechqurun biz mehmonxonaga qaytamiz, u erda bizni xayrlashuv
+                kechki ovqati kutmoqda. Ichida qulay muhitda siz o'tgan kun
+                haqidagi taassurotlaringizni baham ko'rishingiz mumkin kun,
+                o'zbek oshxonasidan bahramand bo'lish va buning teskarisiga
+                tayyorgarlik ko'rish yo'llar.
+              </p>
+            </div>
+          </div>
+
+          <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                  panel.style.maxHeight = null;
+                } else {
+                  panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+              });
+            }
+          </script>
+        </div>
+
+        <p>
+          Buxoro bo'ylab ushbu kunlik sayohat sizga noyob imkoniyatni taqdim
+          etadi qadimgi shahar atmosferasiga sho'ng'ish, undan zavqlanish
+          arxitektura durdonalari va Buyuk Ipak yo'lining ruhini his eting. Biz
+          ishonchimiz komilki, bu kun sizni eng yorqin va unutilmas qoldiradi
+          taassurotlar!
+        </p>
+      </div>
+    </section>
+
+    <section class="section video">
+      <div class="section-overlay">
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/1feAEm1EnSI?start=12"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="section blog" id="blog">
+      <div class="section-overlay">
+        <div class="section-row aifs">
+          <div class="col pl">
+            <h3 class="section-title">Bizning blog</h3>
+            <div class="section-content">
+              <div class="inner-blog">
+                <div class="splide" aria-labelledby="carousel-heading" id="splideblog">
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide">
+                        <div class="blog-ticket">
+                          <img class="blog-bg" src="/assets/imgs/background12.png" alt="">
+                          <h3 class="blog-title">O'zbekistonga vizani qanday olish mumkin?</h3>
+                          <div class="blog-description">
+                            O'zbekistonga vizalar bo'yicha tezkor qo'llanma: qiziqarli sayohat sehrini kashf eting!
+                          </div>
+                          <a class="blog-btn" href="/uz/blog/how-to-get-a-visa-for-uzbekistan/">
+                              <p>O'qing!</p>
+                              <i class="fa fa-arrow-right fa-fw" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="blog-ticket">
+                            <img class="blog-bg" src="/assets/imgs/background13.png" alt="">
+                            <h3 class="blog-title">Nima uchun sayohat agentligiga murojaat qilishingiz kerak?</h3>
+                            <div class="blog-description">
+                              Afzalliklarni oching: muammosiz, moslashtirilgan va unutilmas sayohat uchun WorldWide Travel-ni tanlang!
+                            </div>
+                            <a class="blog-btn" href="/uz/blog/why-you-should-approach-a-tour-agency/">
+                                <p>O'qing!</p>
+                                <i class="fa fa-arrow-right fa-fw" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="blog-ticket">
+                            <img class="blog-bg" src="/assets/imgs/progress.jpg" alt="">
+                            <h3 class="blog-title">Nima uchun O'zbekistonga sayohat qilish kerak?</h3>
+                            <div class="blog-description">
+                              O'zbekistonning boy tarixi, ajoyib me'morchiligi va tabiiy go'zalliklari bilan tanishish oson va arzon.
+                            </div>
+                            <a class="blog-btn" href="/uz/blog/why-travel-to-uzbekistan/">
+                              <p>O'qing!</p>
+                              <i class="fa fa-arrow-right fa-fw" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="blog-ticket">
+                          <img class="blog-bg" src="/assets/imgs/progress.jpg" alt="">
+                          <h3 class="blog-title">Blog ishlab chiqilmoqda</h3>
+                          <div class="blog-description">
+                            U bir necha kundan keyin tugaydi, lekin siz boshqa bloglarimizni o'qishdan zavqlanishingiz mumkin.
+                          </div>
+                          <div class="blog-btn" style="background-color: gray;">
+                              <p>Rivojlanish jarayonida</p>
+                              <i class="fa fa-gears fa-fw" aria-hidden="true"></i>
+                          </div>
+                      </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="section feedback" id="feedback">
+      <div class="section-overlay">
+        <div class="section-row aifs">
+          <div class="col-md-7 pl">
+            <h3 class="section-title">Biz bilan bog'laning</h3>
+            <div class="section-content">
+              <form action="https://formsubmit.co/h.hakasbaraka@gmail.com" class="form form-vertical">
+                <div class="form-group">
+                  <label for="name" class="form-control-label">Ism</label>
+                  <input
+                    type="text"
+                    name="name"
+                    autocomplete="off"
+                    id="name"
+                    class="form-control"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-control-label">E-mail</label>
+                  <input
+                    type="text"
+                    name="email"
+                    autocomplete="off"
+                    id="email"
+                    class="form-control"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="phone" class="form-control-label">Telefon raqami</label>
+                  <input
+                    type="tel"
+                    value="+"
+                    placeholder="+123-123-123"
+                    name="phone"
+                    autocomplete="off"
+                    id="phone"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="msg" class="form-control-label">Xabar</label>
+                  <textarea
+                    name="msg"
+                    id="msg"
+                    rows="10"
+                    autocomplete="off"
+                    class="form-control"
+                  ></textarea>
+                </div>
+                <button type="submit" class="form-button">Yuborish</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-5 map-container">
+            <div
+              class="footer-title"
+              style="font-size: larger; margin-top: 0px; margin-bottom: 5px"
+            >
+              Kontaktlar
+            </div>
+            <div class="footer-content" style="margin-bottom: 20px;">
+              <p style="font-size: large">
+                <a href="tel:+998781200629">+998 (78) 120-06-29</a>
+              </p>
+              <p style="font-size: large">
+                <a href="tel:+998909498080">+998 (90) 949-80-80</a>
+              </p>
+              <p style="font-size: large">
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=worldwidetravel.uz@gmail.com"
+                  >worldwidetravel.uz@gmail.com</a
+                >
+              </p>
+            </div>
+            <iframe src="https://yandex.ru/map-widget/v1/?z=16&ol=biz&oid=28128079165" width="100%" height="400" frameborder="0"></iframe>
+            <div class="payment">
+              <img
+                src="https://toplogos.ru/images/thumbs/preview-logo-visa.png"
+                alt="Logotip Visa"
+              />
+              <img
+                src="https://toplogos.ru/images/thumbs/preview-logo-mastercard.png"
+                alt="Logotip MasterCard"
+              />
+              <img
+                src="https://toplogos.ru/images/thumbs/preview-logo-mir.png"
+                alt="Logotip Мир"
+              />
+              <img src="/assets/imgs/payment/uzcard.png" alt="Logotip Uzcard" />
+              <img src="/assets/imgs/payment/humo.jpg" alt="Logotip Humo" />
+              <img src="/assets/imgs/payment/zood.webp" alt="Logotip ZoodPay" />
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer id="footer" class="footer" role="contentinfo">
+      <div class="col-md-2 col-sm-4 mb-3">
+        <img
+          src="/assets/imgs/logo.png"
+          class="w-logo"
+          alt="WorldWide Travel"
+        />
+      </div>
+      <div class="col-md-3 col-sm-8">
+        <div class="footer-title">Manzil</div>
+        <div class="footer-content">
+          <p>2, O'zbekiston Ovozi ko'chasi, Mirzo-Ulug'bek rayoni</p>
+          <p>Toshkent, O'zbekiston</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="footer-title">Kontaktlar</div>
+        <div class="footer-content">
+          <p><a href="tel:+998781200629">+998 (78) 120-06-29</a></p>
+          <p><a href="tel:+998909498080">+998 (90) 949-80-80</a></p>
+          <p>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=worldwidetravel.uz@gmail.com"
+              >worldwidetravel.uz@gmail.com</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="footer-title">Biz haqimizda</div>
+        <div class="footer-content">
+          <p>WorldWide Travel - sayyohlik agentligi</p>
+          <p>© 2024. Barcha huquqlar himoyalangan</p>
+          <iframe src="https://yandex.ru/sprav/widget/rating-badge/28128079165?type=rating" width="150" height="50" frameborder="0"></iframe>
+        </div>
+      </div>
+<a href="https://webmaster.yandex.ru/siteinfo/?site=https://wwt.uz"><img width="88" height="31" alt="" border="0" src="https://yandex.ru/cycounter?https://wwt.uz&theme=light&lang=ru"/></a>
+    </footer>
+    <script src="/index.min.js"></script>
+
+    <!-- splide js -->
+    <script>
+       document.addEventListener( 'DOMContentLoaded', function() {
+            new Splide('#splideback', {
+              type  : 'fade',
+              rewind: true,
+                autoplay: true,
+                arrows: false,
+                pagination: false,
+                lazyload: 'sequential',
+                interval: 10000,
+            }).mount();
+        } );
+
+        document.addEventListener( 'DOMContentLoaded', function() {
+            new Splide('#splidetesti', {
+              type    : 'loop',
+              perPage : 1,
+              autoplay: true,
+              pagination: false,
+            }).mount();
+        } );
+
+        document.addEventListener( 'DOMContentLoaded', function() {
+            new Splide('#splidetour', {
+              type    : 'loop',
+              perPage : 2,
+              pagination: false,
+              breakpoints: {
+                1215: { perPage: 1 },
+              },
+            }).mount();
+        } );
+
+        document.addEventListener( 'DOMContentLoaded', function() {
+            new Splide('#splideblog', {
+              type    : 'loop',
+              perPage : 3,
+              autoplay: true,
+              arrows: false,
+              drag   : 'free',
+              snap   : true,
+              perMove: 1,
+              pauseOnHover: true,
+              pagination: false,
+              breakpoints: {
+                1300: { perPage: 2 },
+                950 : { perPage: 1 },
+              },
+            }).mount();
+        } );
+
+        const textarea = document.getElementById('msg');
+
+        const btn1 = document.getElementById('btn1');
+        const btn2 = document.getElementById('btn2');
+        const btn3 = document.getElementById('btn3');
+
+        btn1.addEventListener('click', function handleClick() {
+          textarea.value += 'Men "Buxoroga bir kun" safari haqida ko\'proq bilishni istardim';
+        });
+        btn1.addEventListener('click', function handleClick() {
+          textarea.value += 'Men "O\'zbekistonda bestseller" safari haqida ko\'proq bilishni istardim';
+        });
+        btn1.addEventListener('click', function handleClick() {
+          textarea.value += 'Men "O\'zbekistonga byudjet safari" safari haqida ko\'proq bilishni istardim';
+        });
+
+    </script>
+
+
+    
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
+
+      ym(97916349, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+      });
+    </script>
+    <noscript>
+      <div>
+        <img
+          src="https://mc.yandex.ru/watch/97916349"
+          style="position: absolute; left: -9999px"
+          alt=""
+        />
+      </div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+  </body>
+</html>
